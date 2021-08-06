@@ -1,0 +1,9 @@
+name: MSL
+version: 1.0
+main: rocketMissile.Main
+
+commands:
+  settarget:
+    description: "idk"
+  settargetplayer:
+    description: "idk2"
