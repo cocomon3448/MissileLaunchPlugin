@@ -1,5 +1,4 @@
 # Missile Launch Plugin
-약 10시간동안 머리를 쥐어짜서 만든 플러그인, 포물선 공식 1시간 동안 찾았다 ㄹㅇ
 
 ## Plugin commands
  - /settargetplayer [nickname]
