@@ -12,21 +12,21 @@ public class Main extends JavaPlugin implements Listener{
 	@Override
 	public void onEnable() {
 		// TODO Auto-generated method stub
-		System.out.println("RocketMissle 플러그인이 활성화되었습니다.");
+		System.out.println("[RocketMissile] Plugin Loaded");
 		getServer().getPluginManager().registerEvents(new MissileLaunchEvent(), this);
 	}
 	@Override
 	public void onDisable() {
 		// TODO Auto-generated method stub
 //		super.onDisable();
-		System.out.println("플러그인이 비활성화되었습니다.");
+		System.out.println("[RocketMissile] Plugin Disabled");
 	}
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		Player p = (Player) sender;
 		if(command.getName().equalsIgnoreCase("settarget")) {
 			if(args.length == 0) {
-				p.sendMessage("커멘드를 길게 쳐주세요");
+				p.sendMessage("Input coordinates [x] [y] [z]");
 			}
 			else if(args.length > 0) {
 				if(args != null) {
@@ -41,7 +41,7 @@ public class Main extends JavaPlugin implements Listener{
 		}
 		else if(command.getName().equalsIgnoreCase("settargetplayer")) {
 			if(args.length == 0) {
-				p.sendMessage("커멘드를 길게 쳐주세요");
+				p.sendMessage("Input some nickname [nickname]");
 			}
 			else if(args.length > 0) {
 				Player target = Bukkit.getPlayer(args[0]);
